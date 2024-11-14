@@ -7516,8 +7516,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Web-Mining-and-Applied-NLP-(44-620)">Web Mining and Applied NLP (44-620)<a class="anchor-link" href="#Web-Mining-and-Applied-NLP-(44-620)">¶</a></h1><h2 id="Web-Scraping-and-NLP-with-Requests,-BeautifulSoup,-and-spaCy">Web Scraping and NLP with Requests, BeautifulSoup, and spaCy<a class="anchor-link" href="#Web-Scraping-and-NLP-with-Requests,-BeautifulSoup,-and-spaCy">¶</a></h2><h3 id="Student-Name:-David-Rodriguez-Mayorquin">Student Name: David Rodriguez-Mayorquin<a class="anchor-link" href="#Student-Name:-David-Rodriguez-Mayorquin">¶</a></h3><p>Perform the tasks described in the Markdown cells below.  When you have completed the assignment make sure your code cells have all been run (and have output beneath them) and ensure you have committed and pushed ALL of your changes to your assignment repository.</p>
-<p>Every question that requires you to write code will have a code cell underneath it; you may either write your entire solution in that cell or write it in a python file (<code>.py</code>), then import and run the appropriate code to answer the question.</p>
+<h1 id="Web-Mining-and-Applied-NLP-(44-620)">Web Mining and Applied NLP (44-620)<a class="anchor-link" href="#Web-Mining-and-Applied-NLP-(44-620)">¶</a></h1><h2 id="Web-Scraping-and-NLP-with-Requests,-BeautifulSoup,-and-spaCy">Web Scraping and NLP with Requests, BeautifulSoup, and spaCy<a class="anchor-link" href="#Web-Scraping-and-NLP-with-Requests,-BeautifulSoup,-and-spaCy">¶</a></h2><p><strong>Student Name:</strong> David Rodriguez-Mayorquin</p>
+<p><a href="https://github.com/drodmay1/web-scraping.git">https://github.com/drodmay1/web-scraping.git</a></p>
+<h1 id="Article-Analysis-with-spaCy">Article Analysis with spaCy<a class="anchor-link" href="#Article-Analysis-with-spaCy">¶</a></h1><p>This project leverages Natural Language Processing (NLP) techniques using Python and spaCy to analyze the content of an article. The main goals are to identify and rank frequent words and concepts, score sentences based on word relevance, and visualize the distribution of interesting terms.</p>
+<p>...</p>
 </div>
 </div>
 </div>
@@ -7526,7 +7528,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -7580,6 +7582,7 @@ cymem                     2.0.8
 debugpy                   1.8.8
 decorator                 5.1.1
 defusedxml                0.7.1
+en_core_web_sm            3.8.0
 executing                 2.1.0
 fastjsonschema            2.20.0
 fonttools                 4.54.1
@@ -7711,7 +7714,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -7767,7 +7770,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -7962,7 +7965,7 @@ BWM’s prototype
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -8045,7 +8048,7 @@ Token: 'led', Frequency: 10
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -8130,7 +8133,7 @@ Lemma: 'led', Frequency: 10
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">spacy</span>
@@ -8214,7 +8217,7 @@ Lemma-based score for the first sentence: 0.3333333333333333
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -8307,7 +8310,7 @@ Lemma-based score for the first sentence: 0.3333333333333333
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
